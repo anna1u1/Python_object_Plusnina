@@ -23,3 +23,4 @@ else:
     A = 0
     B = 0
     print(A, B)
+
