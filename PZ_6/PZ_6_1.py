@@ -3,30 +3,24 @@
 
 import random
 
-def PrintList(List):
-    for element in List:
+def PrintList(ListAppend):
+    for element in ListAppend:
         print(element, end=' ')
     print()
-
-
 ListSum = []
 n = int(input('Введите размер списка: '))
-
 t = 0
 while t < n:
     ListSum.append(random.randint(-100, 100))
     t += 1
-
-print('Исходный список:', sep='\n')
+print('Исходный список', sep='\n')
 PrintList(ListSum)
-
 k = int(input('Введите K: '))
 l = int(input('Введите L: '))
-
 s = 0
-i = k
-while i <= l:
-    s += ListSum[i]
-    i += 1
+t = k
+while t <= l:
+    s += ListSum[t - 1]
+    t += 1
 
-print('Сумма элементов с номерами от K до L: ', s)
+print('Сумма элементов с номерами от K до L: ', s, sep='\n')
