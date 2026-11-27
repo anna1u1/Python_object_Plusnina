@@ -1,24 +1,26 @@
-# Дан целочисленный список размера N.
-# Найти количество различных элементов в данном списке.
+# Дан список размера N и целые числа K и L (1 < K < L < N).
+# Найти сумму элементов списка с номерами от K до L включительно.
 
 import random
 
-def PrintList(List):
-    for element in List:
+def PrintList(ListAppend):
+    for element in ListAppend:
         print(element, end=' ')
     print()
-
-
-ListDiff = []
+ListSum = []
 n = int(input('Введите размер списка: '))
 t = 0
 while t < n:
-    ListDiff.append(random.randint(-100, 100))
+    ListSum.append(random.randint(-100, 100))
     t += 1
-print('Исходный список:', sep='\n')
-PrintList(ListDiff)
-unique = []
-for element in ListDiff:
-    if element not in unique:
-        unique.append(element)
-print('Количество различных элементов: ', len(unique))
+print('Исходный список', sep='\n')
+PrintList(ListSum)
+k = int(input('Введите K: '))
+l = int(input('Введите L: '))
+
+s = 0
+t = k
+while t <= l:
+    s += ListSum[t - 1]
+    t += 1
+print('Сумма элементов с номерами от K до L: ', s, sep='\n')
