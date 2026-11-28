@@ -8,7 +8,6 @@ if S != '':
     T = S
     if T[0] == '+' or T[0] == '-':
         T = T[1:]
-
     if T != '':
         if T.find('.') == -1:
             if T.isdigit():
