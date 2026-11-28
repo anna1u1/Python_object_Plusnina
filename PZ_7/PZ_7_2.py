@@ -7,7 +7,6 @@ S = input('Введите строку: ')
 New_String = ''
 i = 0
 n = len(S)
-
 while i < n:
     if S[i] == ' ':
         New_String = New_String + ' '
@@ -17,7 +16,6 @@ while i < n:
         while j < n and S[j] != ' ':
             j += 1
         Slovo = S[i:j]
-
         last = Slovo[len(Slovo) - 1]
         New_Slovo = ''
         for t in range(len(Slovo)):
