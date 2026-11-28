@@ -2,7 +2,6 @@
 # Найти количество различных элементов в данном списке.
 
 import random
-
 def PrintList(ListAppend):
     for element in ListAppend:
         print(element, end=' ')
@@ -21,5 +20,4 @@ while t < len(ListDiff):
     if ListDiff[t] not in unique:
         unique.append(ListDiff[t])
     t += 1
-
 print('Количество различных элементов: ', len(unique), sep='\n')
