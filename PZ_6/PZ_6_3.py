@@ -17,7 +17,6 @@ ListSort.sort()
 ListSort.append(random.randint(-100, 100))
 print('Исходный список:', sep='\n')
 PrintList(ListSort)
-
 x = ListSort[n - 1]
 i = n - 2
 while i >= 0 and ListSort[i] > x:
