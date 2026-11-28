@@ -2,7 +2,6 @@
 # Найти сумму элементов списка с номерами от K до L включительно.
 
 import random
-
 def PrintList(ListAppend):
     for element in ListAppend:
         print(element, end=' ')
@@ -22,5 +21,4 @@ t = k
 while t <= l:
     s += ListSum[t - 1]
     t += 1
-
 print('Сумма элементов с номерами от K до L: ', s, sep='\n')
