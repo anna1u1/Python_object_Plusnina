@@ -21,4 +21,4 @@ t = k
 while t <= l:
     s += ListSum[t - 1]
     t += 1
-print('Сумма элементов с номерами от K до L: ', s, sep='\n')
+print('Сумма элементов от K до L: ', s, sep='\n')
